@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Item cart</title>
-    <style>
+    <head>
+        <title>Mobile phone shop</title> 
+        <link rel="icon" type="image1/x-icon" href="C:\Users\Akila Fernando\Documents\Web Practice\download.png"> 
+        <link rel="stylesheet" href="styles.css">
         
-        .items-container {
-            display: flex; 
-            flex-wrap: wrap; 
-        }
+    </head>
+    <body>
 
-        .item {
-            width: 150px; 
-            margin: 10px; 
-            text-align: center; 
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <div>
+        <section class="items-heading">
             <h1>Items</h1>
-        </div>
+        </section>
+        
+        <section class="item-box">
+            <div class="single-item">
+                    
+                <div class="item1">
+                        <img class="image1" src="C:\Users\Akila Fernando\Documents\Web practice\A03 new.webp">
+                        <h3>Samsung Galaxy A03S</h3>
+                        <button onclick="addToCart('Samsung Galaxy A03s')">Add to Cart</button>
+                    </div>
 
-        <div class="items-container">
-            <div class="item">
-                <img src="Samsung-Galaxy-A03s.jpg" alt="iphone 14" style="width:130px;height:130px;">
-                <h4>Samsung Galaxy A03s</h4>
-                <button type="button" onclick="alert('Hello world!')">Add to cart</button>
+                    <div class="item1">
+                        <img class="image1" src="C:\Users\Akila Fernando\Documents\Web practice\huawei nova y70.png">
+                        <h3>Huawei Nova Y70</h3>
+                        <button onclick="addToCart('Samsung Galaxy A03s')">Add to Cart</button>
+                    </div>
+
+                    <div class="item1">
+                        <img class="image1" src="C:\Users\Akila Fernando\Documents\Web practice\Apple-iPhone-14-Pro-Max-1.jpg">
+                        <h3>Apple iPhone 14 Pro Max</h3>
+                        <button onclick="addToCart('Samsung Galaxy A03s')">Add to Cart</button>
+                    </div>
+
+                    <div class="item1">
+                        <img class="image1" src="C:\Users\Akila Fernando\Documents\Web practice\Apple-iPhone-13-Pro-Max-Sierra-Blue-01.webp">
+                        <h3>Apple iPhone 13 Pro-128GB</h3>
+                        <button onclick="addToCart('Samsung Galaxy A03s')">Add to Cart</button>
+                     </div>
+
+                    <div class="item1">
+                        <img class="image1" src="C:\Users\Akila Fernando\Documents\Web practice\iphone 11 64.webp">
+                        <h3>Apple iPhone 11-64GB</h3>
+                        <button onclick="addToCart('Samsung Galaxy A03s')">Add to Cart</button>
+                    </div>
+
             </div>
-            <div class="item">
-                <img src="list-blue.png" alt="iphone 14" style="width:130px;height:130px;">
-                <h4>Huawei Nova Y70</h4>
-                <button type="button" onclick="alert('Hello world!')">Add to cart</button>
+            
+        </section>
+        
+        <section class="cartsection">
+            <div class="cartheader">
+                <h1>Cart</h1>
             </div>
-            <div class="item">
-                <img src="11_64_BL_Molano_600x.webp" alt="iphone 14" style="width:130px;height:130px;">
-                <h4>Apple iphone 11 64GB</h4>
-                <button type="button" onclick="alert('Hello world!')">Add to cart</button>
+            <div class="carticon">
+                <img class="cartic" src="C:\Users\Akila Fernando\Documents\Web practice\scart.png">
             </div>
-            <div class="item">
-                <img src="apple-13-pro.jpg" alt="iphone 14" style="width:130px;height:130px;">
-                <h4>Apple iphone 13 Pro 128GB</h4>
-                <button type="button" onclick="alert('Hello world!')">Add to cart</button>
-            </div>
-            <div class="item">
-                <img src="apple-iphone-14-pro-max-1.jpg" alt="iphone 14" style="width:130px;height:130px;">
-                <h4>Apple iphone 14 Pro Max</h4>
-                <button type="button" onclick="alert('Hello world!')">Add to cart</button>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h1>Cart</h1>
-        </div>
-        <img src="download.png" alt="shopping cart" style="width:100px;height:100px;">
-        <div>
-            <h4>Items</h4>
-            <ol>
-                <li>Samsung Galaxy A03s</li>
-                <li>Apple iphone 13 Pro 128GB</li>
+
+        <div class="itemsdisplayheader">
+            <h3>Items in the cart</h3>
+            <ol style="font-size: 20px;">
+                <li>Huawei Nova Y70</li>
+                <li>Apple iPhone 11-64GB</li>
             </ol>
+            
         </div>
-    </div>
-</body>
+            
+        </section>
+    </body>
 </html>
